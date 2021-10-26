@@ -1,0 +1,44 @@
+# The purpose of this macro is to provide a simple gui to send
+# FEM task to Qarnot Cloud Computing platform.
+#
+# To use it, you just have to create an account on https://account.qarnot.com/?from=computing,
+# start the macro and fill in your token. Then you just have to chose a
+# solver and click start. The macro will then write the simulation
+# file and then send it to Qarnot platform so your computer does not
+# have to bother with the heavy calculation. The macro also allows you to
+# send multiples tasks at once so you can gain some time. Once a task
+# is finished, it will be ticked in the panel and you can click load
+# to load the results.
+#
+# It is also possible to give a simulation a name so it is easier to
+# know which one is which when you run multiple tasks.
+#
+# When the window opens, it will also try to retrieve previously sent tasks
+# so you can let a simulation during the night.
+#
+# Alternatively, the macro can be used in python interpreter by using
+# QarnotController class
+
+__Name__ = 'Fem Cloud Computing on Qarnot'
+__Comment__ = 'Run Fem calculation on remote Qarnot cloud computing platform'
+__Author__ = 'Alexis de La Fourniere'
+__Version__ = '0.2.0'
+__Date__ = '2021-08-30'
+__License__ = 'LGPL v 2.1'
+__Web__ = ''
+__Wiki__ = ''
+__Icon__ = ''
+__Help__ = 'Fill in your token, select a solver and click on start'
+__Status__ = 'Alpha'
+__Requires__ = 'FreeCAD >= v0.19'
+__Communication__ = ''
+__Files__ = 'gui.py, controller.py, femtask.py, femenums.py, Gui/eventhandler.py,\
+    Gui/utils.py, Gui/widgets.py, Gui/Ressources/img/console_link_icon.gif,\
+    Gui/Ressources/txt/help_string.html'
+
+import FreeCAD as App
+
+import gui
+
+window = gui.QarnotCloudComputingGUI()
+App.QarnotComputingGui = window
