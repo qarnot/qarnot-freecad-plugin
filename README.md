@@ -34,7 +34,7 @@ Other less important files are :
 
 ## Installation
 
-You can find the step by step explanation for installation in [Qarnot's documentation](). Here is a quick overview:
+You can find the step by step explanation for installation in [Qarnot's documentation]().
 
 
 
