@@ -37,7 +37,8 @@ __Files__ = 'gui.py, controller.py, femtask.py, femenums.py, Gui/eventhandler.py
     Gui/Ressources/txt/help_string.html'
 
 import FreeCAD as App
-
+import sys
+sys.path.insert(1, '*******')
 import gui
 
 window = gui.QarnotCloudComputingGUI()

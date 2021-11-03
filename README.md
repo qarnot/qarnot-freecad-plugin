@@ -34,13 +34,16 @@ Other less important files are :
 
 ## Installation
 
-You can find the step by step explanation for installation in [Qarnot's documentation]().
+You can find the step by step explanation for installation in [Qarnot's documentation](https://blog.qarnot.com/fcmacro/). Basically what you need is :
+- FreeCAD 0.19 with the FEM workbench up and running
+- Qarnot Python SDK (install with `pip install qarnot`)
+- Clone this repo in your macro folder and copy the file `FemCloudComputingQarnot.FCmacro` from the newly created subdirectory inside the macro folder. Then edit the macro code line `sys.path.insert(1, '*******')` by replacing the stars with the path to the folder with the code
 
 
 
 ## How to run with GUI
 
-You can find the step by step explanation for installation and running in [Qarnot's documentation](). Here is a quick overview:
+You can find the step by step explanation for running the macro in [Qarnot's documentation](https://blog.qarnot.com/fcmacro/). Below is a quick overview.
 
 
 
