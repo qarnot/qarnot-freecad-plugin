@@ -61,7 +61,8 @@ class QarnotCloudComputingGUI(QtGui.QWidget):
             'Set directory ou use default')
         # Directory button
         self.buttonDirectory = QtGui.QPushButton()
-        self.buttonDirectory.setIcon(QtGui.QIcon.fromTheme('folder-open'))
+        self.buttonDirectory.setIcon(self.style().standardIcon(
+            QtGui.QStyle.SP_DialogOpenButton))
         # Simulation name edit
         self.lineEditName = QtGui.QLineEdit()
         self.lineEditName.setPlaceholderText('Choose simulation\'s name')
@@ -102,7 +103,8 @@ class QarnotCloudComputingGUI(QtGui.QWidget):
             QtGui.QStyle.SP_DialogDiscardButton))
         # Log button
         self.buttonLog = QtGui.QPushButton(text='Log')
-        self.buttonLog.setIcon(QtGui.QIcon.fromTheme('text-x-generic'))
+        self.buttonLog.setIcon(self.style().standardIcon(
+            QtGui.QStyle.SP_FileDialogDetailedView))
         # Load button
         self.buttonLoad = QtGui.QPushButton(text='Load')
         self.buttonLoad.setIcon(QtGui.QIcon.fromTheme('emblem-downloads'))
